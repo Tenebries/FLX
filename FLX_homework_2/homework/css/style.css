@@ -1,0 +1,163 @@
+/* Task 1 - done! */
+@media print {
+    .tm-sidebar, #about, .heading, .blocks, #ideas, section:nth-child(6), .tm-content-box::before {
+        display: none;
+    }
+
+    #home {
+        margin-bottom: 0;
+    }
+
+    #home > .tm-banner {
+        border: 0;
+        padding: 30px;
+    }
+
+    p::first-letter {
+        color: #3c5fa4;
+    }
+
+    img {
+        max-height: 300px;
+    }
+
+    .tm-content-box.flex-2-col {
+        margin-bottom: 0;
+    }
+
+    .tm-team-description-container > h2 {
+        color: #2544ff;
+    }
+
+    .padding-medium {
+        padding-top: 0;
+    }
+
+    .tm-footer {
+        background-color: white;
+    }
+}
+
+/* Task 2 - done! */
+#about li:nth-child(odd):hover {
+    background-color: #87cefa;
+    cursor: pointer;
+}
+
+#about li:nth-child(odd) > h2:hover {
+    color: #fff;
+    font-weight: bold;
+    transition: all .3s ease;
+}
+
+/* Task 3 - done! */
+p::first-letter {
+    color: #87cefa;
+    font-size: 30px;
+}
+
+/* Task 4 - done! */
+.tm-content-box.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+.tm-sidebar, .tm-content-box {
+    box-shadow: 0 0 10px #7d7d7d;
+}
+
+.tm-banner {
+    border: 30px solid #f5f5f5;
+    padding: 0;
+}
+
+/* Task 5 - done! */
+.tm-content-box {
+    position: relative;
+}
+
+.tm-content-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-left: 250px solid #87cefa;
+    z-index: 5;
+}
+
+/* Task 6 - done! */
+#tmCarousel h2 {
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+
+/* Task 7 - done! */
+h2 + p {
+    font-style: italic;
+}
+
+/* Task 8 - done! */
+section p.tm-section-description {
+    line-height: 2em;
+    text-indent: 1.5em;
+}
+
+/* Task 9 - done! */
+.heading h2 {
+    color: #6acedf;
+    text-align: center;
+}
+
+.heading a:visited {
+    text-decoration: underline;
+}
+
+.heading a:hover {
+    color: #59d7ce;
+    text-decoration: underline double;
+}
+
+.heading li:nth-child(1) > a:after,
+.heading li:nth-child(3) > a:after {
+    content: "New";
+    vertical-align: super;
+    color: red;
+    font-size: .7em;
+}
+
+/* Task 10 - done! */
+.blocks .box:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.boxes.gallery-container p::first-letter {
+    color: #000;
+}
+
+.box.box-work {
+    padding: 10px;
+}
+
+/* Task 11 - done! */
+.btn.btn-primary.submit-btn {
+    float: right;
+    padding: 7px 33px;
+    background-color: #fff;
+    color: #9fd8fb;
+    border-color: #9fd8fb;
+    border-radius: 0;
+}
+
+.btn.btn-primary.submit-btn:hover {
+    background-color: #9fd8fb;
+    color: #fff;
+}
+
+.mandatory-field:after {
+    content: "*";
+    color: red;
+    font-weight: bold;
+}
