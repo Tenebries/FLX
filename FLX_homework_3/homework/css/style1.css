@@ -1,0 +1,188 @@
+body {
+  font-family: Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  margin: 0 auto;
+  background-color: #fff;
+  color: #000; }
+
+header {
+  height: 100vh;
+  background: url("../img/header_background_v1.jpg") no-repeat center;
+  background-size: cover; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo img {
+      max-height: 135px; }
+    header .top-wrapper nav {
+      margin-top: 15px; }
+      header .top-wrapper nav a {
+        border-right: 2px solid #607d8b;
+        padding: 15px 7.5vw;
+        color: #fff;
+        font-size: .95em;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none; }
+      header .top-wrapper nav a:last-child {
+        border-right: none; }
+      header .top-wrapper nav a:hover {
+        border-radius: 5px;
+        padding: 10px 7.5vw;
+        background: rgba(255, 255, 255, 0.5);
+        transition: all .25s ease; }
+  header section {
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    header section h1 {
+      color: #fff;
+      font-size: 1.3em;
+      text-transform: uppercase; }
+    header section a {
+      padding: 12.5px 57.5px;
+      background-color: #00acac;
+      color: #fff;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      text-decoration: none; }
+    header section a:hover {
+      background: rgba(255, 255, 255, 0.75);
+      color: #00acac;
+      transition: all .25s ease; }
+
+main {
+  margin: 17px 17%; }
+  main .toolbar {
+    margin-right: 10px;
+    text-align: right; }
+    main .toolbar input {
+      border: 1px solid #607d8b;
+      padding: 10px 6.5px 10px 15px;
+      background-color: #fff; }
+    main .toolbar input::placeholder {
+      color: #75757c; }
+  main .post-list {
+    color: #000; }
+    main .post-list h1 {
+      margin: 15px 0 0 0;
+      font-size: 1.4em;
+      text-align: right;
+      text-transform: uppercase; }
+    main .post-list article {
+      margin-bottom: 20px;
+      padding: 10px;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: 260px 1fr;
+      background-color: #efefef; }
+      main .post-list article img {
+        max-height: 260px; }
+      main .post-list article .post {
+        margin: 0 7.5px 22.5px 0; }
+        main .post-list article .post .post-description {
+          margin-bottom: 7.5px;
+          border-bottom: 1px solid #607d8b;
+          padding: 10px 5px;
+          color: #ff0c09;
+          font-size: 0.7em; }
+        main .post-list article .post h3 {
+          margin: 5px 0 2.5px 0;
+          color: #139eac;
+          font-size: 1em;
+          text-transform: uppercase; }
+        main .post-list article .post p {
+          margin: 2.5px 0 17.5px 0;
+          font-size: .875em;
+          line-height: 1.6em; }
+      main .post-list article .btn {
+        float: right;
+        margin-right: 7.5px;
+        padding: 10px 67.5px;
+        background-color: #00acac;
+        color: #fff;
+        border: transparent;
+        text-transform: uppercase; }
+      main .post-list article .btn:hover {
+        background: rgba(0, 172, 172, 0.75);
+        cursor: pointer;
+        transition: all .25s ease; }
+  main .about {
+    margin-top: 50px;
+    padding: 5px 10px;
+    color: #000; }
+    main .about h1 {
+      margin: 5px 0;
+      font-size: 1.3em;
+      text-align: right;
+      text-transform: uppercase; }
+    main .about p {
+      margin: 5px 0 20px 0;
+      font-size: .875em;
+      font-weight: 300;
+      line-height: 1.6em; }
+    main .about img {
+      max-width: 100%; }
+  main .contact-form {
+    margin-top: 50px;
+    text-align: right;
+    color: #000; }
+    main .contact-form h1 {
+      margin-bottom: 0;
+      font-size: 1.3em;
+      text-transform: uppercase; }
+    main .contact-form h4 {
+      margin-top: 0;
+      font-size: .9em;
+      text-transform: uppercase; }
+    main .contact-form form {
+      margin-bottom: 10px;
+      text-align: right; }
+      main .contact-form form input {
+        box-sizing: border-box; }
+      main .contact-form form .field {
+        width: 49.15%;
+        display: inline-block; }
+        main .contact-form form .field label {
+          font-size: .85em;
+          color: #2da8bb; }
+        main .contact-form form .field input {
+          width: 100%;
+          margin: 5px 0;
+          border: 1px solid #607d8b;
+          padding: 12.5px 0;
+          background-color: #fff; }
+      main .contact-form form .field:first-child {
+        margin-right: 10px; }
+      main .contact-form form .field-text {
+        margin-top: 20px; }
+        main .contact-form form .field-text label {
+          display: block;
+          color: #2da8bb;
+          font-size: .9em; }
+        main .contact-form form .field-text textarea {
+          width: 100%;
+          height: 125px;
+          box-sizing: border-box;
+          margin: 5px 0;
+          background-color: #fff; }
+    main .contact-form button {
+      padding: 10px 75px;
+      background-color: #00acac;
+      border: transparent;
+      color: #fff;
+      text-transform: uppercase; }
+    main .contact-form button:hover {
+      background: rgba(0, 172, 172, 0.75);
+      cursor: pointer;
+      transition: all .25s ease; }
+
+footer {
+  margin-top: 25px;
+  position: relative;
+  bottom: 15px;
+  left: 15px;
+  font-size: 0.7em; }
