@@ -1,0 +1,397 @@
+/*:root {
+    --bg-color--dark: #0b192f;
+    --bg-color--header: #162b4d;
+    --link: #fff;
+    --link--hover: #b8b8b8;
+    --bg-footer-color: #162b4d;
+}*/
+
+.post-1 {
+	background: #B71757;
+}
+
+.post-2 {
+	background: #0D7E71;
+}
+
+.post-3 {
+	background: #b1660e;
+}
+
+.post-4 {
+	background: #d12767;
+}
+
+.post-5 {
+	background: #2d95bb;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #0b192f;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.container {
+    margin: 0 10%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162b4d;
+}
+
+.logo-text {
+    margin: 20px 15px;
+    color: #fff;
+    font-size: 1.9em;
+}
+
+#toggle {
+    display: none;
+}
+
+.logo-text span {
+    color: #a92953;
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav a {
+    padding: 30px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, .2);
+}
+/* Header end */
+
+/* Main */
+main {
+    float: left;
+    width: 75%;
+    margin-top: 20px;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 50% 42% 8%;
+}
+
+.post:nth-child(even) {
+    grid-template-areas: "date text image";
+    grid-template-columns: 8% 42% 50%;
+}
+
+.post:nth-child(even) .post-date {
+    padding: 10px 0 0 10px;
+    grid-area: date;
+}
+
+.post:nth-child(even) .post-text {
+    grid-area: text;
+    text-align: right;
+}
+
+.post:nth-child(even) img {
+    grid-area: image;
+}
+
+.post img {
+    max-width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.post img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.post-text {
+    padding: 8% 9%;
+}
+
+.post-text h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 200;
+    line-height: 1em;
+}
+
+.post-text h1:hover {
+    color: #b8b8b8;
+    cursor: pointer;
+}
+
+.post-text p {
+    color: rgba(255, 255, 255, .4);
+    font-size: .9em;
+}
+
+.post-date {
+    text-align: center;
+    color: rgba(255, 255, 255, .4);
+    font-weight: 200;
+}
+
+.post-date .day {
+    font-size: 3vw;
+}
+
+.post-date .month {
+    font-size: 1.6vw;
+}
+
+.post-end {
+    display: grid;
+    grid-template-columns: 92% 8%;
+}
+
+.post-end .post-text {
+    padding: 30px;
+}
+
+.post-end .post-text h1 {
+    margin-bottom: 20px;
+}
+
+.post-end .post-text p {
+    font-size: .85em;
+}
+/* Main end */
+
+/* Aside */
+aside {
+    float: right;
+    width: 23%;
+    margin-top: 20px;
+}
+
+.news {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.news img {
+    max-width: 100%;
+}
+
+.news-text {
+    padding: 10% 12%;
+}
+
+.news-text h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+.news-text p {
+    color: rgba(0, 0, 0, .6);
+    font-size: .9em;
+}
+/* Aside end */
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #162b4d;
+    color: rgba(255, 255, 255, .25);
+}
+/* Footer end */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .container {
+        margin: 0 1%;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .logo-text {
+        margin: 70px 0 50px 0;
+    }
+
+    /* Hamburger menu */
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked + .hamburger + .nav {
+        top: 0;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 10px;
+        z-index: 5;
+    }
+
+    .hamburger span {
+        display: block;
+        width: 11px;
+        height: 1px;
+        margin-top: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav {
+        width: 98%;
+        height: 100%;
+        margin: 0 1%;
+        position: fixed;
+        top: -100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #162b4d;
+        transition: all .3s ease-in-out;
+    }
+
+    .nav .nav-wrapper {
+        height: 100%;
+    }
+
+    nav {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin-top: 1.25em;
+        font-size: 2.3em;
+        letter-spacing: 3px;
+        transition: all 0.1s ease;
+    }
+
+    nav a:hover {
+        background: none;
+    }
+
+    #toggle:checked + .hamburger + .nav .nav-wrapper nav a {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+
+    #toggle:checked + .hamburger + .nav .nav-wrapper nav a:hover {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    /* Hamburger menu end */
+
+    /* Main */
+    main {
+        width: 60%;
+    }
+
+    .posts {
+        width: 57.5vw;
+    }
+
+    .post {
+        grid-template-columns: 100%;
+        grid-template-rows: 53% 29% 15%;
+    }
+
+    .post:nth-child(even) {
+        grid-template-areas:
+                "image"
+                "text"
+                "date";
+        grid-template-columns: 1fr;
+        grid-template-rows: 52% 29% 15%;
+    }
+
+    .post:nth-child(even) .post-date {
+        padding: 0;
+    }
+
+    .post:nth-child(even) .post-text {
+        text-align: unset;
+    }
+
+    .post:nth-child(even) img {
+        width: 100%;
+    }
+
+    .post-text {
+        padding: 5% 7%;
+    }
+
+    .post-date .day {
+        font-size: 3em;
+    }
+
+    .post-date .month {
+        font-size: 1.6em;
+    }
+
+    .post-end {
+        grid-template-columns: 1fr;
+        grid-template-rows: 70% 30%;
+    }
+    /* Main end */
+
+    /* Aside */
+    aside {
+        width: 38%;
+    }
+
+    .news-text {
+        padding: 10%;
+    }
+    /* Aside end */
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer p {
+        margin: 0;
+    }
+    /* Footer end */
+}
+
+@media (max-width: 480px) {
+    main {
+        float: unset;
+        width: unset;
+    }
+
+    .posts {
+        width: unset;
+    }
+
+    .post-end {
+        width: unset;
+    }
+
+    aside {
+        float: unset;
+        width: unset;
+        margin-top: 0;
+    }
+}
