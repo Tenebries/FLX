@@ -1,5 +1,5 @@
-let amount = prompt(`Input amount of money:`);
-let discount = prompt(`Input your discount:`);
+let amount = parseInt(prompt(`Input amount of money:`));
+let discount = parseInt(prompt(`Input your discount:`));
 let message = "";
 if (amount < 0 || amount > 9999999 || discount < 0 || discount > 99 || isNaN(amount) || isNaN(discount)) {
     message = `Invalid input data!`;

@@ -1,6 +1,6 @@
-let a = parseInt(prompt(`Input value A:`), 10);
-let b = parseInt(prompt(`Input value B:`), 10);
-let c = parseInt(prompt(`Input value C:`), 10);
+let a = parseInt(prompt(`Input value A:`));
+let b = parseInt(prompt(`Input value B:`));
+let c = parseInt(prompt(`Input value C:`));
 if (a === 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
     alert(`Invalid input data!`);
 }
