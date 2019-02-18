@@ -1,14 +1,21 @@
 body {
+  margin: 0 auto;
+  background-color: #efefef;
+  color: #75757c;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 18px;
   font-weight: normal;
-  margin: 0 auto;
-  background-color: #efefef;
-  color: #75757c; }
+  max-width: 100%; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+h1, h3, h4 {
+  text-transform: uppercase; }
 
 header {
   height: 100vh;
-  background: url("../img/header_background_v1.jpg") no-repeat center;
+  background: url("../img/header_background_v2.jpg") no-repeat center;
   background-size: cover; }
   header .top-wrapper {
     display: flex;
@@ -40,8 +47,7 @@ header {
     align-items: center; }
     header section h1 {
       color: #ff5722;
-      font-size: 1.3em;
-      text-transform: uppercase; }
+      font-size: 1.3em; }
     header section a {
       padding: 12.5px 57.5px;
       background-color: #0401ac;
@@ -70,8 +76,7 @@ main {
     main .post-list h1 {
       margin: 15px 0 0 0;
       font-size: 1.4em;
-      text-align: right;
-      text-transform: uppercase; }
+      text-align: right; }
     main .post-list article {
       margin-bottom: 20px;
       padding: 10px;
@@ -92,8 +97,7 @@ main {
         main .post-list article .post h3 {
           margin: 5px 0 2.5px 0;
           color: #607d9a;
-          font-size: 1em;
-          text-transform: uppercase; }
+          font-size: 1em; }
         main .post-list article .post p {
           margin: 2.5px 0 17.5px 0;
           font-size: .875em;
@@ -117,8 +121,7 @@ main {
     main .about h1 {
       margin: 5px 0;
       font-size: 1.3em;
-      text-align: right;
-      text-transform: uppercase; }
+      text-align: right; }
     main .about p {
       margin: 5px 0 20px 0;
       font-size: .875em;
@@ -132,12 +135,10 @@ main {
     color: #75757c; }
     main .contact-form h1 {
       margin-bottom: 0;
-      font-size: 1.3em;
-      text-transform: uppercase; }
+      font-size: 1.3em; }
     main .contact-form h4 {
       margin-top: 0;
-      font-size: .9em;
-      text-transform: uppercase; }
+      font-size: .9em; }
     main .contact-form form {
       margin-bottom: 10px;
       text-align: right; }
@@ -182,7 +183,5 @@ main {
 
 footer {
   margin-top: 25px;
-  position: relative;
-  bottom: 15px;
-  left: 15px;
+  padding-left: 15px;
   font-size: 0.7em; }

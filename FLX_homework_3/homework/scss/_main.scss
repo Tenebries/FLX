@@ -1,14 +1,19 @@
-@mixin fontStyle {
-    font-family: $fontFamily;
-    font-size: $fontSize;
-    font-weight: $fontWeight;
-}
-
 body {
-    @include fontStyle;
     margin: 0 auto;
     background-color: $backgroundColor;
     color: $textColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    max-width: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h3, h4 {
+    text-transform: uppercase;
 }
 
 header {
@@ -62,7 +67,6 @@ header {
         h1 {
             color: $headerTextColor;
             font-size: 1.3em;
-            text-transform: uppercase;
         }
 
         a {
@@ -107,7 +111,6 @@ main {
             margin: 15px 0 0 0;
             font-size: 1.4em;
             text-align: right;
-            text-transform: uppercase;
         }
 
         article {
@@ -137,7 +140,6 @@ main {
                     margin: 5px 0 2.5px 0;
                     color: $articleHeaderColor;
                     font-size: 1em;
-                    text-transform: uppercase;
                 }
 
                 p {
@@ -174,7 +176,6 @@ main {
             margin: 5px 0;
             font-size: 1.3em;
             text-align: right;
-            text-transform: uppercase;
         }
 
         p {
@@ -197,13 +198,11 @@ main {
         h1 {
             margin-bottom: 0;
             font-size: 1.3em;
-            text-transform: uppercase;
         }
 
         h4 {
             margin-top: 0;
             font-size: .9em;
-            text-transform: uppercase;
         }
 
         form {
@@ -272,9 +271,7 @@ main {
 }
 
 footer {
-    margin-top: 25px;
-    position: relative;
-    bottom: 15px;
-    left: 15px;
+    margin: 25px 0;
+    padding: 15px;
     font-size: 0.7em;
 }
