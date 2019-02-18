@@ -1,13 +1,13 @@
 function addOne(x) {
-    return x + 1;
+  return x + 1;
 }
 
 function pipe(number) {
-    for (let i = 1; i < arguments.length; i++) {
-        number = arguments[i](number);
-    }
+  for (let i = 1; i < arguments.length; i++) {
+    number = arguments[i](number);
+  }
 
-    return number;
+  return number;
 }
 
 pipe(1, addOne); // 2

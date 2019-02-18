@@ -1,14 +1,14 @@
-function reverseNumber (number) {
-    let reverseNumber = 0;
+function reverseNumber(number) {
+  let reverseNumber = 0;
 
-    while (number !== 0) {
-        reverseNumber *= 10;
-        reverseNumber += number % 10;
-        number -= number % 10;
-        number /= 10;
-    }
+  while (number !== 0) {
+    reverseNumber *= 10;
+    reverseNumber += number % 10;
+    number -= number % 10;
+    number /= 10;
+  }
 
-    return reverseNumber;
+  return reverseNumber;
 }
 
 reverseNumber(123); // 321

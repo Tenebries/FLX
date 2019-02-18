@@ -1,22 +1,22 @@
 function formatTime(time) {
-    let days = 0;
-    let hours = 0;
-    let minutes = 0;
+  let days = 0;
+  let hours = 0;
+  let minutes = 0;
 
-    while (time !== 0) {
-        if (time >= 1440) {
-            time -= 1440;
-            days++;
-        } else if (time >= 60) {
-            time -= 60;
-            hours++;
-        } else {
-            minutes = time;
-            break;
-        }
+  while (time !== 0) {
+    if (time >= 1440) {
+      time -= 1440;
+      days++;
+    } else if (time >= 60) {
+      time -= 60;
+      hours++;
+    } else {
+      minutes = time;
+      break;
     }
+  }
 
-    return `${days} day(s) ${hours} hour(s) ${minutes} minute(s).`;
+  return `${days} day(s) ${hours} hour(s) ${minutes} minute(s).`;
 }
 
 formatTime(120); // 0 day(s) 2 hour(s) 0 minute(s).
