@@ -2,9 +2,9 @@ const rootNode = document.getElementById('root');
 const ZERO = 0;
 let todoItems = [];
 let counter = 1000;
-let temporaryValue = '';
+let temp = '';
 
-createElement = (tag, className, text) => {
+function createElement (tag, className, text) {
   let element = document.createElement(tag);
 
   if (className) {
@@ -15,9 +15,9 @@ createElement = (tag, className, text) => {
   }
 
   return element;
-};
+}
 
-mainPage = () => {
+function mainPage () {
   window.location.hash = '';
   rootNode.innerText = '';
   let title = createElement('h1', 'title', `Simple TODO application`);
@@ -28,7 +28,9 @@ mainPage = () => {
 
   rootNode.appendChild(title);
   rootNode.appendChild(addButton);
-  if (todoItems.length === ZERO) rootNode.appendChild(emptyBlock);
+  if (todoItems.length === ZERO) {
+    rootNode.appendChild(emptyBlock);
+  }
   rootNode.appendChild(list);
 
   function pageBuild(i) {
@@ -70,7 +72,7 @@ mainPage = () => {
     let textToEdit = document.getElementsByClassName('task-text');
     for (let i = 0; i < textToEdit.length; i++) {
       textToEdit[i].onclick = () => {
-        temporaryValue = `modify/${i + 1}`;
+        temp = `modify/${i + 1}`;
         window.location.hash = `modify/${i + 1}`;
       }
     }
@@ -103,11 +105,11 @@ mainPage = () => {
 
   addButton.addEventListener('click', addChangeHash);
   console.log(todoItems);
-};
+}
 
 mainPage();
 
-addNewItems = () => {
+function addNewItems () {
   let title = createElement('h1', 'title', `Add task`);
   let input = createElement('input', 'input');
   input.id = 'input'; // ?
@@ -144,10 +146,11 @@ addNewItems = () => {
 
     return todoItems;
   }
-};
+}
 
-rename = () => {
-  let n = window.location.hash.substr(8);
+function rename () {
+  const LENGTH = 8;
+  let n = window.location.hash.substr(LENGTH);
   n--;
   let title = createElement('h1', 'title', `Modify item`);
   let input = createElement('input');
@@ -179,13 +182,13 @@ rename = () => {
 
     return todoItems;
   }
-};
+}
 
 window.addEventListener('hashchange',() => {
   if (window.location.hash === '#add') {
     rootNode.innerText = '';
     addNewItems();
-  } else if (window.location.hash === `#${temporaryValue}`) {
+  } else if (window.location.hash === `#${temp}`) {
     rootNode.innerText = '';
     rename();
   } else {
