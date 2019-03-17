@@ -1,0 +1,34 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+#navbarNav a {
+  font-weight: bold;
+  border-radius: 0;
+}
+#navbarNav a:hover {
+  background-color: #2a74bf;
+  color: #fff;
+}
+.item-blue-color {
+  color: #2a74bf;
+}
+.hr-blue {
+  border-color: #2a74bf;
+}
+.item-red {
+  border-color: #d7514c;
+  background-color: #d7514c;
+}
+.item-blue {
+  border-color: #2a74bf;
+  background-color: #2a74bf;
+}
+.item-orange {
+  border-color: #d8c11d;
+  background-color: #d8c11d;
+}
+.item-green {
+  border-color: #4d944b;
+  background-color: #4d944b;
+}
+/*# sourceMappingURL=style.css.map */
