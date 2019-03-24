@@ -1,12 +1,10 @@
 function Company({name, owner, maxCompanySize}) {
+  let _companyName = name;
+  let _companyOwner = owner;
+  let _maxCount = maxCompanySize;
   const employees = [];
-  let _companyName = name,
-    _companyOwner = owner,
-    _maxCount = maxCompanySize,
-    companyCreateTime = new Date(),
-    _logs = [`${_companyName} was created in ${companyCreateTime}`];
-
-  // Magic numbers
+  const companyCreateTime = new Date();
+  const _logs = [`${_companyName} was created in ${companyCreateTime}`];
   const _zero = 0;
   const _one = 1;
   const _thousand = 1000;
@@ -104,16 +102,13 @@ function Company({name, owner, maxCompanySize}) {
 }
 
 function Employee({name, primarySkill, age, salary}) {
-  let _logs = [],
-    _name = name,
-    _primarySkill = primarySkill,
-    _age = age,
-    _salary = salary;
-
-  this.endWorkTime = 0;
-
-  // Magic numbers
+  let _name = name;
+  let _primarySkill = primarySkill;
+  let _age = age;
+  let _salary = salary;
+  const _logs = [];
   const _thousand = 1000;
+  this.endWorkTime = 0;
 
   this.getPersonalInfo = function () {
     return {_name, _primarySkill, _salary, _age};
