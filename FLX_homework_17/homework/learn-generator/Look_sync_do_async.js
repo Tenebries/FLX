@@ -1,24 +1,23 @@
-var fs = require('fs');
+let fs = require('fs');
 
-function run(generator) {
-  var it = generator(go);
+function run (generator) {
+  let it = generator(go);
 
-  function go(err, result) {
-    if (err) {
+  function go (err, result) {
+    if (err){
       return it.throw(err);
     }
     it.next(result);
   }
   go();
-
 }
 
-run(function*(done) {
-  var dirFiles, firstFile;
+run(function* (done) {
+  let firstFile;
   try {
-    dirFiles = yield fs.readdir('NoNoNoNo', done);
+    let dirFiles = yield fs.readdir('NoNoNoNo', done);
     firstFile = dirFiles[0];
-  } catch (err) {
+  } catch (e) {
     firstFile = null;
   }
   console.log(firstFile);

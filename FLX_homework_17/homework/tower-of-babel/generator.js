@@ -1,4 +1,5 @@
 const max = process.argv[2];
+
 let fizzBuzz = function*() {
   let counter = 1;
   while (counter <= max) {
@@ -12,7 +13,6 @@ let fizzBuzz = function*() {
     }
     counter++;
     yield value;
-
   }
 }();
 
