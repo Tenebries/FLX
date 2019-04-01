@@ -6,7 +6,7 @@ let fizzBuzz = {
     return {
       next() {
         if (counter > max) {
-          return { done: true };
+          return {done: true};
         }
         let value = counter;
         if (value % 15 === 0) {
@@ -17,12 +17,12 @@ let fizzBuzz = {
           value = "Buzz";
         }
         counter++;
-        return { done: false, value: value };
+        return {done: false, value: value};
       }
     }
   }
 };
 
-for (var n of fizzBuzz) {
+for (let n of fizzBuzz) {
   console.log(n);
 }

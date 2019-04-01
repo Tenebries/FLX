@@ -1,5 +1,5 @@
-var rawArgs = process.argv.slice(2);
-var args = [];
+let rawArgs = process.argv.slice(2);
+let args = [];
 
 rawArgs.forEach(val => {
   let commaSep = val.split(',');
@@ -8,8 +8,5 @@ rawArgs.forEach(val => {
   });
 });
 
-const avg = (...args) => {
-  return args.reduce((sum, n) => (sum += n), 0) / args.length;
-};
-
+let avg = (...args) => args.reduce((a, b) => a + b) / args.length;
 console.log(avg(...args));
