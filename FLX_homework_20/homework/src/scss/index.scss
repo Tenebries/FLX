@@ -1,0 +1,162 @@
+@import 'material-icons'; // self hosted material icons
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.filter-container {
+  .filter-tab {
+    border: none;
+    padding: 10px;
+    font-size: 13px;
+    outline: none;
+
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+
+.container {
+  display: flex;
+
+  .preview-wrapper {
+    flex: 1;
+    padding: 0 10px;
+  }
+
+  .playlist-wrapper {
+    flex: 2;
+  }
+}
+
+.track-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li:not(:last-child) {
+    margin-bottom: 7px;
+  }
+}
+
+.preview {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .info {
+    color: #fff;
+
+    & .author {
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    & .name {
+      padding: 0 15px;
+      text-align: center;
+    }
+
+    img {
+      min-width: 100%;
+      position: absolute;
+      z-index: -1;
+    }
+  }
+
+  .controls {
+    width: 100%;
+    position: absolute;
+    padding: 7px;
+    bottom: 0;
+    left: 0;
+  }
+
+  .progress {
+    height: 3px;
+    position: relative;
+    background: lightgray;
+
+    &-line {
+      width: 8%;
+      height: 100%;
+      position: absolute;
+      background: blue;
+    }
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    i {
+      border-radius: 50%;
+      background: white;
+      cursor: pointer;
+    }
+
+    .stop {
+      margin: 0 10px;
+      font-size: 60px;
+    }
+
+    .prev,
+    .next {
+      font-size: 40px;
+    }
+  }
+}
+
+.playlist {
+  flex: 1;
+}
+
+.track-item {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background: #eee;
+  cursor: pointer;
+
+  i {
+    cursor: pointer;
+  }
+
+  i::selection {
+    background: transparent;
+  }
+
+  button {
+    margin-left: auto;
+    border: none;
+    background: transparent;
+    outline: none;
+
+    &.liked {
+      color: red;
+    }
+  }
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+  &-title {
+    font-weight: bold;
+  }
+}
