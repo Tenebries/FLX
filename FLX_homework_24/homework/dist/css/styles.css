@@ -1,0 +1,274 @@
+.button {
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+* {
+  margin: 0;
+}
+.container {
+  margin: 0 15%;
+}
+.header {
+  height: 100vh;
+  text-align: center;
+}
+.header .header__logo .header__logo-img {
+  height: 30vh;
+  margin-bottom: 50px;
+}
+.header .header__title {
+  font-family: "Dokdo", cursive;
+  font-size: 3em;
+}
+.header .header__description {
+  margin: 20px 0;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.header .header__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+}
+.header .header__nav .header__nav-button {
+  width: 200px;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.header .header__nav .header__nav-button:hover {
+  color: white;
+  background: #1ecd97;
+}
+.main #rules {
+  height: 100vh;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main #rules .rules__button {
+  width: 150px;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #rules .rules__button:hover {
+  background: #1ecd97;
+  color: white;
+}
+.main #rules .rules__title {
+  font-family: "Dokdo", cursive;
+  font-size: 2.5em;
+}
+.main #rules .rules__description {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.25em;
+  font-weight: 600;
+}
+.main #game {
+  height: 100vh;
+  padding-top: 50px;
+  text-align: center;
+}
+.main #game .game__button-up {
+  width: 150px;
+  border: 2px solid #1ecd97;
+  padding: 10px;
+  color: #1ecd97;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #game .game__button-up:hover {
+  background: #1ecd97;
+  color: white;
+}
+.main #game .game__title {
+  margin: 20px 0 0 0;
+  font-family: "Dokdo", cursive;
+  font-size: 3em;
+}
+.main #game .game__rock-button {
+  width: 150px;
+  border: 2px solid #928c7f;
+  color: #928c7f;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #game .game__rock-button:hover {
+  color: white;
+  background: #928c7f;
+}
+.main #game .game__paper-button {
+  width: 150px;
+  border: 2px solid #f1c99f;
+  color: #f1c99f;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #game .game__paper-button:hover {
+  color: white;
+  background: #f1c99f;
+}
+.main #game .game__scissors-button {
+  width: 150px;
+  border: 2px solid #c8c6c5;
+  color: #c8c6c5;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #game .game__scissors-button:hover {
+  color: white;
+  background: #c8c6c5;
+}
+.main #game .game__scores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: "Indie Flower", cursive;
+  font-size: 4em;
+}
+.main #game .won {
+  color: #1ecd97;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+}
+.main #game .lose {
+  color: red;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+}
+.main #game .draw {
+  color: cadetblue;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.5em;
+}
+.main #game .game__button-reset {
+  width: 150px;
+  border: 2px solid #1ecd97;
+  color: #1ecd97;
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.main #game .game__button-reset:hover {
+  color: white;
+  background: #1ecd97;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+{"version":3,"sources":["_mixins.less","_variables.less"],"names":[],"mappings":"AAEA;EACI,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,gBAAA;EACA,aCPc,gBDOd;EACA,gBAAA;EACA,iBAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,qBAAA;EACA,eAAA;EACA,0BAAA","sourcesContent":["@import \"_variables\";\r\n\r\n.button {\r\n    align-self: center;\r\n    margin: 20px 25px;\r\n    border-radius: 40px;\r\n    background: #fff;\r\n    font-family: @titleFontFamily;\r\n    font-size: @descriptionFontSize;\r\n    font-weight: bold;\r\n    text-align: center;\r\n    line-height: 50px;\r\n    letter-spacing: 1px;\r\n    text-decoration: none;\r\n    cursor: pointer;\r\n    transition: all 0.25s ease;\r\n  }\r\n","@titleFontFamily: \"Dokdo\", cursive;\r\n@titleFontSize: 3em;\r\n@descriptionFontFamily: \"Indie Flower\", cursive;\r\n@descriptionFontSize: 1.5em;\r\n"],"file":"_mixins.css"}
+.button {
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/*# sourceMappingURL=_mixins.css.map */
+
+{"version":3,"names":[],"mappings":"","sources":["_variables.less"],"sourcesContent":["@titleFontFamily: \"Dokdo\", cursive;\r\n@titleFontSize: 3em;\r\n@descriptionFontFamily: \"Indie Flower\", cursive;\r\n@descriptionFontSize: 1.5em;\r\n"],"file":"_variables.css"}
+
+/*# sourceMappingURL=_variables.css.map */

@@ -1,0 +1,204 @@
+@titleFontFamily: "Dokdo", cursive;
+@titleFontSize: 3em;
+@descriptionFontFamily: "Indie Flower", cursive;
+@descriptionFontSize: 1.5em;
+
+.button {
+  align-self: center;
+  margin: 20px 25px;
+  border-radius: 40px;
+  background: #fff;
+  font-family: @titleFontFamily;
+  font-size: @descriptionFontSize;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  margin: 0 15%;
+}
+
+.header {
+  height: 100vh;
+  text-align: center;
+
+  .header__logo {
+    .header__logo-img {
+      height: 30vh;
+      margin-bottom: 50px;
+    }
+  }
+
+  .header__title {
+    font-family: @titleFontFamily;
+    font-size: @titleFontSize;
+  }
+
+  .header__description {
+    margin: 20px 0;
+    font-family: @descriptionFontFamily;
+    font-size: @descriptionFontSize;
+    font-weight: 600;
+  }
+
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: @titleFontFamily;
+    font-size: @descriptionFontSize;
+
+    .header__nav-button {
+      width: 200px;
+      border: 2px solid #1ecd97;
+      color: #1ecd97;
+      .button();
+
+      &:hover {
+        color: white;
+        background: #1ecd97;
+      }
+    }
+  }
+}
+
+.main {
+  #rules {
+    height: 100vh;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .rules__button {
+      width: 150px;
+      border: 2px solid #1ecd97;
+      color: #1ecd97;
+      .button();
+
+      &:hover {
+        background: #1ecd97;
+        color: white;
+      }
+    }
+
+    .rules__title {
+      font-family: @titleFontFamily;
+      font-size: @titleFontSize - 0.5em;
+    }
+
+    .rules__description {
+      font-family: @descriptionFontFamily;
+      font-size: @descriptionFontSize - 0.25em;
+      font-weight: 600;
+    }
+  }
+
+  #game {
+    height: 100vh;
+    padding-top: 50px;
+    text-align: center;
+
+    .game__button-up {
+      width: 150px;
+      border: 2px solid #1ecd97;
+      padding: 10px;
+      color: #1ecd97;
+      .button();
+
+      &:hover {
+        background: #1ecd97;
+        color: white;
+      }
+    }
+
+    .game__title {
+      margin: 20px 0 0 0;
+      font-family: @titleFontFamily;
+      font-size: @titleFontSize;
+    }
+
+    .game__rock-button {
+      width: 150px;
+      border: 2px solid #928c7f;
+      color: #928c7f;
+      .button();
+
+      &:hover {
+        color: white;
+        background: #928c7f;
+      }
+    }
+
+    .game__paper-button {
+      width: 150px;
+      border: 2px solid #f1c99f;
+      color: #f1c99f;
+      .button();
+
+      &:hover {
+        color: white;
+        background: #f1c99f;
+      }
+    }
+
+    .game__scissors-button {
+      width: 150px;
+      border: 2px solid #c8c6c5;
+      color: #c8c6c5;
+      .button();
+
+      &:hover {
+        color: white;
+        background: #c8c6c5;
+      }
+    }
+
+    .game__scores {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family: @descriptionFontFamily;
+      font-size: @descriptionFontSize + 2.5em;
+    }
+
+    .won {
+      color: #1ecd97;
+      font-family: @descriptionFontFamily;
+      font-size: @descriptionFontSize;
+    }
+
+    .lose {
+      color: red;
+      font-family: @descriptionFontFamily;
+      font-size: @descriptionFontSize;
+    }
+
+    .draw {
+      color: cadetblue;
+      font-family: @descriptionFontFamily;
+      font-size: @descriptionFontSize;
+    }
+
+    .game__button-reset {
+      width: 150px;
+      border: 2px solid #1ecd97;
+      color: #1ecd97;
+      .button();
+
+      &:hover {
+        color: white;
+        background: #1ecd97;
+      }
+    }
+  }
+}
