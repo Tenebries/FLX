@@ -1,0 +1,59 @@
+.keyboard {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-areas: "log log log log" "result result result result" "add subtract multiply divide" "seven eight nine MCplus" "four five six MC" "one two three equals" "float null C equals";
+}
+
+.keyboard div {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.log {
+  display: block;
+}
+
+
+.log { grid-area: log; }
+
+.result { grid-area: result; }
+
+.C { grid-area: C; }
+
+.MC { grid-area: MC; }
+
+.seven { grid-area: seven; }
+
+.four { grid-area: four; }
+
+.one { grid-area: one; }
+
+.two { grid-area: two; }
+
+.five { grid-area: five; }
+
+.eight { grid-area: eight; }
+
+.nine { grid-area: nine; }
+
+.six { grid-area: six; }
+
+.three { grid-area: three; }
+
+.null { grid-area: null; }
+
+.multiply { grid-area: multiply; }
+
+.subtract { grid-area: subtract; }
+
+.add { grid-area: add; }
+
+.divide { grid-area: divide; }
+
+.equals { grid-area: equals; }
+
+.float { grid-area: float; }
+
+.MCplus { grid-area: MCplus; }
